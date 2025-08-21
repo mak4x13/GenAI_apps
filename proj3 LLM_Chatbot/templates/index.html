@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My LLM Chatbot</title>
+    <meta name="author" content="MAK">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='ico_img.svg') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='ico_img.svg') }}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <main class="chat-container">
+        <header class="chat-header">
+            <h1>My LLM</h1>
+            <p>Copyright © MAK 2025 - Created by MAK</p>
+        </header>
+        <div class="chat-messages" id="messages-container">
+            <!-- Chat messages will be dynamically inserted here -->
+        </div>
+        <footer class="chat-footer">
+            <form class="chat-form" id="message-form">
+                <input id="message-input" placeholder="Send a message..." required>
+                <button type="submit">➤</button>
+            </form>
+        </footer>
+    </main>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
